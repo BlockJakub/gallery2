@@ -1,0 +1,268 @@
+<!--
+    Copyright (c) 2025 Jakub Janecek
+    All rights reserved.
+    See copyright_rights_plan.txt for details.
+-->
+<!-- Gallery website -->
+<!-- Created By Jakub Janecek 09/2025 -->
+<!-- Jacuba Visuals Web -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_darkmode.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light nav-justified sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Gallery</a>
+            <!-- Theme toggle button -->
+            <button id="themeToggle" class="btn btn-sm btn-outline-dark ms-3" aria-pressed="false"
+                aria-label="Toggle theme">
+                <i class="bi bi-moon" aria-hidden="true"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#legal">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro -->
+    <section id="intro" class="p-5 neuo-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Welcome to the Gallery</h1>
+                    <p class="lead">Modern design, smooth animations & curated photography.</p>
+                    <p>Explore interactive collections powered by Unsplash API. Switch between light/dark mode and enjoy
+                        neumorphic & glassmorphism design principles.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="img/ff_javascript_code_screens_green.jpg" alt="Hero" class="img-fluid hero-img"
+                        srcset="img/ff_javascript_code_screens_green.jpg 480w" sizes="(max-width: 768px) 100vw, 420px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="p-5 glass-section">
+        <div class="container">
+            <h2 class="mb-4 text-center">Gallery</h2>
+            <div class="masonry-gallery gallery-container">
+                <div class="masonry-item"><img src="img/debbie_jump.JPG" alt="Debbie Jump"
+                        class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ffInternet_cable_electromagnetic.jpg"
+                        alt="Internet Cable Electromagnetic" class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ff_Internnet_cable_surrounded.jpg"
+                        alt="Internet Cable Surrounded" class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ff_javascript_code_screens_green.jpg"
+                        alt="Javascript Code Screens" class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ff_keyboard.jpg" alt="Keyboard"
+                        class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ff_web_development.jpg" alt="Web Development"
+                        class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/ff_web_development2.jpg" alt="Web Development 2"
+                        class="img-fluid rounded shadow"></div>
+                <div class="masonry-item"><img src="img/Tropical_twist_sunny_blend_mango_pineapple.jpg"
+                        alt="Tropical Twist Sunny Blend" class="img-fluid rounded shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology" class="p-5 neuo-section text-center">
+        <div class="container">
+            <h2 class="mb-4">Technology</h2>
+            <p class="mb-5">Modern frameworks, professional cameras & cloud integration.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <i class="bi bi-camera fs-2 mb-2"></i>
+                                <h3>Pro Cameras</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <p>Sharp, vibrant shots captured with DSLR & mirrorless tech.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <i class="bi bi-laptop fs-2 mb-2"></i>
+                                <h3>Creative Software</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <p>Photoshop, Lightroom & After Effects for pro-grade editing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <i class="bi bi-cloud fs-2 mb-2"></i>
+                                <h3>Cloud Integration</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <button class="flip-toggle btn btn-sm btn-outline-secondary" aria-label="Flip card">
+                                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                </button>
+                                <p>Fast, scalable, and secure image storage in the cloud.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="p-5 glass-section">
+        <div class="container">
+            <h2>About</h2>
+            <p class="lead">A creative showcase combining responsive layouts and interactive features.</p>
+            <p>Visuals can tell stories, spark emotions, and inspire. This gallery project is designed for designers,
+                developers, and enthusiasts to learn and enjoy.</p>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section id="service" class="p-5 neuo-section text-center">
+        <div class="container">
+            <h2>Service</h2>
+            <p class="mb-4">What people say:</p>
+            <div class="carousel slide" id="serviceCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="testimonial">"Amazing service and beautiful photos!"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="testimonial">"Professional and creative team."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="testimonial">"Highly recommended for any event."</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-5 glass-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <div class="mb-3"><label class="form-label">Name</label><input type="text" class="form-control"
+                        required></div>
+                <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control"
+                        required></div>
+                <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control" rows="3"
+                        required></textarea></div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section id="legal" class="p-5 neuo-section">
+        <div class="container">
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="legal/privacy.html">Privacy Policy</a></li>
+                <li><a href="legal/terms.html">Terms of Service</a></li>
+                <li><a href="legal/cookies.html">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 glass-section">
+        <p>© 2025 Gallery Website</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/dark_mode.js" defer></script>
+    <script src="js/masonry-modal.js" defer></script>
+    <script src="js/flipcards.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselEl = document.getElementById('serviceCarousel');
+            if (carouselEl && window.bootstrap && typeof bootstrap.Carousel === 'function') {
+                // Use existing instance if present, otherwise create one with a valid option set
+                const existing = bootstrap.Carousel.getInstance(carouselEl);
+                const bsCarousel = existing || new bootstrap.Carousel(carouselEl, { interval: 3000 });
+                // Ensure it is cycling (start auto-rotation)
+                try { bsCarousel.cycle(); } catch (err) { /* ignore */ }
+            }
+
+            // Ensure page content is not hidden under the sticky navbar
+            const nav = document.querySelector('.glass-nav');
+            function adjustBodyPadding() {
+                if (!nav) return;
+                const h = Math.ceil(nav.getBoundingClientRect().height);
+                document.body.style.paddingTop = h + 'px';
+            }
+            adjustBodyPadding();
+            window.addEventListener('resize', adjustBodyPadding);
+        });
+    </script>
+</body>
+
+</html>
