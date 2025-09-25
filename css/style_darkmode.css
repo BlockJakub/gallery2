@@ -1,0 +1,96 @@
+/*
+    Copyright (c) 2025 Jakub Janecek
++
+    All rights reserved.
+    See copyright_rights_plan.txt for details.
+*/
+/* Dark mode styles for gallery website */
+
+html.dark-theme body {
+    background: #121212 !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .glass-section {
+    background: rgba(30, 30, 30, 0.7) !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .neuo-section {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .navbar {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .flip-card-front {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .flip-card-back {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* consistent border for both faces in dark mode */
+html.dark-theme .flip-card-front,
+html.dark-theme .flip-card-back {
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+
+html.dark-theme .masonry-item img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+    border: 2px solid #23272f !important;
+}
+
+
+html.dark-theme .btn,
+html.dark-theme .btn-outline-dark {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+
+
+html.dark-theme .carousel,
+html.dark-theme .carousel-inner,
+html.dark-theme .carousel-item {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+
+html.dark-theme .form-control {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+
+
+html.dark-theme .modal-content {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+/* Ensure navbar text and links are visible in dark mode */
+html.dark-theme .navbar .navbar-brand,
+html.dark-theme .navbar .nav-link,
+html.dark-theme .navbar .navbar-text {
+    color: #f1f1f1 !important;
+}
+
+/* Make toggler icon (hamburger) visible on dark background */
+html.dark-theme .navbar-toggler-icon {
+    filter: invert(1) brightness(2) !important;
+}
